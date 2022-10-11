@@ -2,7 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AboutSite from '../AboutSite/AboutSite';
 import Cart from '../Cart/Cart';
-import Quiz from '../Quiz/Quiz';
+
 
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
 
     const handleBtn = (id) => {
         console.log(id)
-        <Quiz></Quiz>
+        
     }
 
     return (
@@ -18,9 +18,9 @@ const Home = () => {
             <AboutSite></AboutSite>
         <div className='d-lg-flex gap-lg-4 p-5'>
         {
-            quiz.data.map(quiz => <Cart 
-                key={quiz.id}
-                quiz={quiz} 
+            quiz.data.map(cart => <Cart 
+                key={cart.id}
+                cart={cart} 
                 handleBtn={handleBtn} 
                 ></Cart> )
         }

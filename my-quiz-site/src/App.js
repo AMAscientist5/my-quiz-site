@@ -27,7 +27,10 @@ function App() {
           element: <Blog></Blog>
         },
         {
-          path: '/quiz',
+          path: '/cart/:cartId',
+          loader: async ({params}) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.cartId}`)
+          },
           element: <Quiz></Quiz>
         }
       ]
