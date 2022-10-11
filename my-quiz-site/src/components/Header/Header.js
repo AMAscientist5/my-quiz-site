@@ -12,7 +12,7 @@ const Header = () => {
     <div>
      <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="/">My Quiz Site</Navbar.Brand>
+      <Link className='logo' to='/'><Navbar.Brand>My Quiz Site</Navbar.Brand></Link>     
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto custom">
