@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+    border: 1px solid black;
+}
+
+.header .nav a{
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
