@@ -32,6 +32,10 @@ function App() {
         }
       ]
     },
+    {
+      path: '*',
+      element: <h2>404. This Route Not Found</h2>
+    }
   ]);
   return (
     <div className="App">
