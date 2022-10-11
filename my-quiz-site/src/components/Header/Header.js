@@ -9,12 +9,10 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div>
+    <div>
      <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <div>
         <Navbar.Brand href="/">My Quiz Site</Navbar.Brand>
-        </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto custom">
@@ -22,7 +20,7 @@ const Header = () => {
             <Link to='/statistics'>Statictics</Link>
             <Link to='/blog'>Blog</Link>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse>     
       </Container>
     </Navbar>
         </div>
