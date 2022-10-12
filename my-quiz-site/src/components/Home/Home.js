@@ -8,10 +8,7 @@ import Cart from '../Cart/Cart';
 const Home = () => {
     const quiz = useLoaderData();
 
-    const handleBtn = (id) => {
-        console.log(id)
-        
-    }
+
 
     return (
         <div>
@@ -21,7 +18,6 @@ const Home = () => {
             quiz.data.map(cart => <Cart 
                 key={cart.id}
                 cart={cart} 
-                handleBtn={handleBtn} 
                 ></Cart> )
         }
         </div>
