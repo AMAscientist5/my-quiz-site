@@ -1,9 +1,16 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import QuizChart from '../QuizChart/QuizChart';
 
 const Statictics = () => {
+    const quiz = useLoaderData();
+    
     return (
         <div>
-            <h2>Statictics</h2>
+            
+             <QuizChart 
+              quiz={quiz}
+             ></QuizChart>   
         </div>
     );
 };
